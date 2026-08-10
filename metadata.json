@@ -1,0 +1,6 @@
+{
+  "name": "Interior Dost - Indian Interior Design Packages & Budget Discovery",
+  "description": "Discover personalized interior design packages, room-wise 3D visuals, and dynamic budget breakdowns for Indian homeowners with Zomato-style ease.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
