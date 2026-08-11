@@ -123,8 +123,8 @@ export const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onCl
                 <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Area (Sq. Ft.)</label>
                 <input
                   type="number"
-                  value={area}
-                  onChange={(e) => setArea(Number(e.target.value))}
+                  value={area === '' ? '' : Number(area)}
+                  onChange={(e) => setArea(e.target.value === '' ? '' : Number(e.target.value))}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white"
                 />
               </div>

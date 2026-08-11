@@ -277,8 +277,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onOpenExpert
                     type="number"
                     min={50}
                     max={10000}
-                    value={area}
-                    onChange={(e) => setArea(Number(e.target.value))}
+                    value={area === '' ? '' : Number(area)}
+                    onChange={(e) => setArea(e.target.value === '' ? '' : Number(e.target.value))}
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl py-2.5 px-3.5 text-sm font-bold text-gray-900 focus:outline-none focus:border-[#E23744]"
                   />
                   <input

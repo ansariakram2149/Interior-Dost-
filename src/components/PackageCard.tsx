@@ -122,10 +122,10 @@ Please share more details and quotation.`;
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full bg-[#1A1A1A] hover:bg-[#8C7355] text-white font-bold uppercase tracking-widest text-[10px] py-3 px-4 rounded-sm transition-all text-center shadow-xs flex items-center justify-center space-x-1.5"
+            className="w-full bg-[#1A1A1A] hover:bg-gray-900 text-amber-300 font-black uppercase tracking-wider text-xs py-3.5 px-4 rounded-xl border-2 border-amber-400/80 hover:border-amber-400 transition-all text-center shadow-lg flex items-center justify-center space-x-2"
           >
-            <MessageCircle className="w-3.5 h-3.5 fill-white" />
-            <span>BOOK PACKAGE & REQUEST EXPERT CALLBACK</span>
+            <MessageCircle className="w-4 h-4 fill-amber-300 shrink-0" />
+            <span className="tracking-tight font-black">BOOK PACKAGE & REQUEST EXPERT CALLBACK</span>
           </a>
         </div>
       </div>
