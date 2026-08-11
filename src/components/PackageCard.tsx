@@ -60,12 +60,12 @@ Please share more details and quotation.`;
 
         {/* Budget Overlay on Image */}
         <div className="absolute bottom-4 left-4 right-4 text-white">
-          <p className="text-[10px] uppercase tracking-widest text-[#D1CEC6] font-bold">Estimated Total Investment</p>
+          <p className="text-[11px] uppercase tracking-widest text-amber-200 font-black">Estimated Total Investment</p>
           <div className="flex items-baseline space-x-2">
-            <h3 className="font-serif text-2xl font-normal tracking-tight">
+            <h3 className="font-serif text-2xl sm:text-3xl font-black tracking-tight text-amber-300 drop-shadow-md">
               {formatInr(minBudget)} – {formatInr(maxBudget)}
             </h3>
-            <span className="text-xs text-gray-300 line-through">
+            <span className="text-xs text-gray-200 line-through font-bold">
               {formatInr(maxBudget * 1.2)}
             </span>
           </div>
@@ -76,7 +76,7 @@ Please share more details and quotation.`;
       <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-6">
         <div className="space-y-4">
           <div>
-            <h4 className="font-serif text-xl text-[#1A1A1A]">{pkg.name}</h4>
+            <h4 className="font-serif text-xl font-bold text-[#1A1A1A]">{pkg.name}</h4>
             <p className="text-xs text-gray-600 mt-1 italic">{pkg.tagline}</p>
           </div>
 
@@ -92,19 +92,6 @@ Please share more details and quotation.`;
                 <ShieldCheck className="w-3.5 h-3.5 inline" />
                 <span>{pkg.warranty}</span>
               </span>
-            </div>
-          </div>
-
-          {/* Key Inclusions Bullet Points */}
-          <div className="space-y-2">
-            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Key Package Inclusions:</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {pkg.inclusions.slice(0, 6).map((inc, i) => (
-                <div key={i} className="flex items-start space-x-2 text-xs text-gray-700">
-                  <Check className="w-3.5 h-3.5 text-[#8C7355] shrink-0 mt-0.5" />
-                  <span className="line-clamp-1">{inc}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
