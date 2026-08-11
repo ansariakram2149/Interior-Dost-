@@ -211,16 +211,15 @@ Please share the detailed scope and arrange a callback.`;
               <span>Get This Package on WhatsApp</span>
             </a>
 
-            <button
-              onClick={() => {
-                onClose();
-                onSelectForLead(pkg);
-              }}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-1 bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all flex items-center justify-center space-x-2 text-base"
             >
-              <Sparkles className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5 fill-white" />
               <span>Request Expert Callback</span>
-            </button>
+            </a>
           </div>
 
         </div>

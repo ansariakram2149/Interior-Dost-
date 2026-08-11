@@ -131,12 +131,15 @@ Please share more details and quotation.`;
             </a>
           </div>
 
-          <button
-            onClick={() => onSelectForLead(pkg)}
-            className="w-full bg-[#1A1A1A] hover:bg-[#8C7355] text-white font-bold uppercase tracking-widest text-[10px] py-3 px-4 rounded-sm transition-all text-center shadow-xs"
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-[#1A1A1A] hover:bg-[#8C7355] text-white font-bold uppercase tracking-widest text-[10px] py-3 px-4 rounded-sm transition-all text-center shadow-xs flex items-center justify-center space-x-1.5"
           >
-            BOOK PACKAGE & REQUEST EXPERT CALLBACK
-          </button>
+            <MessageCircle className="w-3.5 h-3.5 fill-white" />
+            <span>BOOK PACKAGE & REQUEST EXPERT CALLBACK</span>
+          </a>
         </div>
       </div>
     </div>

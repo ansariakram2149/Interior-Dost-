@@ -25,13 +25,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenExpertModal, selectedCity 
             Get personalized interior guidance from our expert interior architects in {selectedCity} via WhatsApp (7781011979). Free 3D consultation.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-            <button
-              onClick={onOpenExpertModal}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-gray-900 font-extrabold py-4 px-8 rounded-2xl shadow-lg transition-all hover:scale-105 text-sm sm:text-base flex items-center space-x-2"
             >
-              <Sparkles className="w-5 h-5 text-[#E23744]" />
-              <span>Talk to an Expert</span>
-            </button>
+              <MessageCircle className="w-5 h-5 text-[#E23744] fill-[#E23744]" />
+              <span>Talk to an Expert on WhatsApp</span>
+            </a>
 
             <a
               href={whatsappUrl}

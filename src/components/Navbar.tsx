@@ -52,13 +52,15 @@ export const Navbar: React.FC<NavbarProps> = ({ selectedCity, onOpenExpertModal 
           </a>
 
           {/* Primary Action Button */}
-          <button
-            onClick={onOpenExpertModal}
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center space-x-1.5 bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white text-[11px] sm:text-xs font-black uppercase tracking-wider px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 active:scale-95 shrink-0 border border-white/20"
           >
             <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-200 animate-spin shrink-0" style={{ animationDuration: '4s' }} />
-            <span>Get Quote</span>
-          </button>
+            <span>Get Quote on WhatsApp</span>
+          </a>
         </div>
       </div>
     </header>

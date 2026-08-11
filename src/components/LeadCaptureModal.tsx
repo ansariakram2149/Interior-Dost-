@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Sparkles, CheckCircle2, Phone, User, MapPin, Home, Maximize2 } from 'lucide-react';
+import { X, Sparkles, CheckCircle2, Phone, User, MapPin, Home, Maximize2, MessageCircle } from 'lucide-react';
 import { InteriorPackage, UserRequirement } from '../types';
+import { CONFIG_WHATSAPP_NUMBER } from '../data/packagesData';
 
 interface LeadCaptureModalProps {
   isOpen: boolean;
@@ -25,7 +26,11 @@ export const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onCl
       alert("Please enter your name and mobile number.");
       return;
     }
-    setSubmitted(true);
+    const whatsappUrl = `https://wa.me/${CONFIG_WHATSAPP_NUMBER}?text=${encodeURIComponent(
+      `Hi Interior Dost team, my name is ${name} (${mobile}). I want expert callback & guidance for ${propertyType} (${area} Sq. Ft.) in ${city} ${selectedPackage ? `regarding ${selectedPackage.name}` : ''}. Please guide me.`
+    )}`;
+    window.open(whatsappUrl, '_blank');
+    onClose();
   };
 
   const handleReset = () => {
@@ -126,10 +131,10 @@ export const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onCl
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all flex items-center justify-center space-x-2 text-base mt-2"
+                className="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all flex items-center justify-center space-x-2 text-base mt-2"
               >
-                <Sparkles className="w-5 h-5" />
-                <span>Get Free Expert Guidance</span>
+                <MessageCircle className="w-5 h-5 fill-white" />
+                <span>Continue to WhatsApp & Expert Callback</span>
               </button>
             </form>
           ) : (
