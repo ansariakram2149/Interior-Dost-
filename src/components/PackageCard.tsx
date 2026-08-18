@@ -111,10 +111,13 @@ Please share more details and quotation.`;
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-3 px-4 rounded-sm text-xs uppercase tracking-wider transition-all flex items-center justify-center space-x-1"
+              className="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-2 px-3 rounded-sm text-xs uppercase tracking-wider transition-all flex flex-col items-center justify-center text-center leading-tight shadow-xs"
             >
-              <MessageCircle className="w-4 h-4 fill-white" />
-              <span>WhatsApp</span>
+              <div className="flex items-center space-x-1">
+                <MessageCircle className="w-3.5 h-3.5 fill-white shrink-0" />
+                <span>WhatsApp</span>
+              </div>
+              <span className="text-[9px] font-normal lowercase tracking-normal text-white/95 mt-0.5">Book Free Consultation</span>
             </a>
           </div>
 
