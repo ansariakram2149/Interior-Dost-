@@ -124,8 +124,8 @@ Please share more details and quotation.`;
             rel="noopener noreferrer"
             className="w-full bg-[#1A1A1A] hover:bg-gray-900 text-amber-300 font-black uppercase tracking-wider text-xs py-3.5 px-4 rounded-xl border-2 border-amber-400/80 hover:border-amber-400 transition-all text-center shadow-lg flex items-center justify-center space-x-2"
           >
-            <MessageCircle className="w-4 h-4 fill-amber-300 shrink-0" />
-            <span className="tracking-tight font-black">BOOK PACKAGE & REQUEST EXPERT CALLBACK</span>
+            <MessageCircle className="w-4 h-4 text-[#25D366] fill-[#25D366] shrink-0" />
+            <span className="tracking-tight font-black">Book Free Consultation</span>
           </a>
         </div>
       </div>
